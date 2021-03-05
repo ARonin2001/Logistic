@@ -1,0 +1,15 @@
+node_modules/
+src/fonts/
+src/img/
+src/scss/blocks/
+src/scss/fonts/
+src/baner
+src/content/
+src/footer
+src/header
+src/index
+src/sidebar
+package.json
+package-lock.json
+gulpfile
+

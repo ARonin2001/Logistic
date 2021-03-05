@@ -1,0 +1,33 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("fonts/#{$file_name}.woff") forma("woff"), url("fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+}
+
+@import 'reset';
+@import 'fonts';
+@import 'base/animations';
+@import 'base/media';
+@import 'base/mixins';
+@import 'base/variables';
+
+body {
+    background-color: #ffffff;
+}
+
+.label {
+    font-family: "Lato-Bold";
+    font-size: 15px;
+    line-height: 22px;
+    color: #2a535e;
+}
+
+@import 'blocks/wrapp';
+@import 'blocks/container';
+@import 'blocks/baner';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/content';
+@import 'blocks/sidebar';
